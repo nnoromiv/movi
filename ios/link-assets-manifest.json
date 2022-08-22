@@ -1,0 +1,13 @@
+{
+  "migIndex": 1,
+  "data": [
+    {
+      "path": "assets/fonts/Urbanist-Italic-VariableFont_wght.ttf",
+      "sha1": "00fa85850408c79f6d8225b5e9571d9c2f8c9a7d"
+    },
+    {
+      "path": "assets/fonts/Urbanist-VariableFont_wght.ttf",
+      "sha1": "9b4bdf40dab5d162646c63130c2fb2020aeee873"
+    }
+  ]
+}

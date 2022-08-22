@@ -1,9 +1,10 @@
 import React from 'react'
-import { SignedOutStack } from './navigation'
+import { SignedInStack, SignedOutStack } from './navigation'
 
 const App = () => {
   return (
-    <SignedOutStack />
+    //<SignedOutStack />
+    <SignedInStack />
   )
 }
 

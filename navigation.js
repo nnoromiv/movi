@@ -5,6 +5,7 @@ import GetStartedScreen from "./screens/GetStartedScreen";
 import LetYouInScreen from "./screens/LetYouInScreen";
 import CreateAccountScreen from "./screens/CreateAccountScreen";
 import LogInScreen from "./screens/LogInScreen";
+import AccountSetUpChooseInterest from "./screens/AccountSetUpChooseInterest";
 
 const Stack = createStackNavigator()
 
@@ -20,6 +21,14 @@ export const SignedOutStack = () => (
             <Stack.Screen name="LetYouInScreen" component={LetYouInScreen} />
             <Stack.Screen name="CreateAccountScreen" component={CreateAccountScreen} />
             <Stack.Screen name="LogInScreen" component={LogInScreen} />
+        </Stack.Navigator>
+    </NavigationContainer>
+)
+
+export const SignedInStack = () => (
+    <NavigationContainer>
+        <Stack.Navigator initialRouteName="AccountSetUpChooseInterest" screenOptions={screenOptions}>
+            <Stack.Screen name="AccountSetUpChooseInterest" component={AccountSetUpChooseInterest} />
         </Stack.Navigator>
     </NavigationContainer>
 )
