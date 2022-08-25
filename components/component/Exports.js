@@ -1,31 +1,60 @@
 import React from 'react'
 import { Image, StyleSheet, Text, TouchableOpacity } from 'react-native'
 
-export const PrimaryButton = ({ buttonStyle, buttonFunc, buttonText, disabled}) => (
-    <TouchableOpacity disabled={disabled}>
-      <Text style={buttonStyle}
-        onPress={buttonFunc}
-        > {buttonText}
+export const PrimaryButton = ({ buttonStyle, buttonFunc, buttonText, disabled, buttonImgUrl, buttonImgStyle}) => (
+    <TouchableOpacity disabled={disabled} onPress={buttonFunc}>
+    <Image source={{uri: buttonImgUrl}} style={buttonImgStyle}/>
+      <Text style={buttonStyle}> {buttonText}
     </Text>
     </TouchableOpacity>
 )
 
 export const icons = [
     {
+        id: 0,
         name: 'Go back',
         imageUrl: 'https://img.icons8.com/fluency-systems-regular/64/000000/long-arrow-left.png'
     },
     {
+        id: 1,
         name: 'Connect with Facebook',
         imageUrl: 'https://img.icons8.com/fluency/48/000000/facebook-new.png'
     },
     {
+        id: 2,
         name: 'Connect with Google',
         imageUrl: 'https://img.icons8.com/color/48/000000/google-logo.png'
     },
     {
+        id: 3,
         name: 'Connect with Apple',
         imageUrl: 'https://img.icons8.com/ios-filled/50/000000/mac-os.png'
+    },
+    {
+        id: 4,
+        name: 'Edit icon',
+        imageUrl: 'https://img.icons8.com/material/24/ffffff/edit--v1.png'
+    },
+    {
+        id: 5,
+        name: 'Search icon',
+        imageUrl: 'https://img.icons8.com/ios-glyphs/60/ffffff/search--v1.png'
+    },
+    {
+        id: 6,
+        name: 'Notification icon',
+        imageUrl: 'https://img.icons8.com/fluency-systems-regular/48/ffffff/appointment-reminders--v1.png'
+    },
+    {
+        id:7,
+        name: 'Play',
+        imageUrl: 'https://img.icons8.com/fluency-systems-filled/48/ffffff/play.png'
+    },
+    {
+        id:8,
+        name: 'List',
+        imageUrl: 'https://img.icons8.com/sf-black-filled/64/d3d3d3/list.png',
+        inactiveUrl: 'https://img.icons8.com/sf-black-filled/64/ffffff/list.png'
     },
 
 ]

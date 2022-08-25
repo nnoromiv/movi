@@ -5,10 +5,11 @@ import GetStartedScreen from "./screens/GetStartedScreen";
 import LetYouInScreen from "./screens/LetYouInScreen";
 import CreateAccountScreen from "./screens/CreateAccountScreen";
 import LogInScreen from "./screens/LogInScreen";
-import AccountSetUpChooseInterest from "./screens/AccountSetUpChooseInterest";
+import AccountSetUpChooseInterest from "./screens/Account/AccountSetUpChooseInterest";
+import AccountSetUpProfile from "./screens/Account/AccountSetUpProfile";
+import HomePageScreen from "./screens/Home/HomePageScreen";
 
 const Stack = createStackNavigator()
-
 
 const screenOptions = {
     headerShown: false,
@@ -29,6 +30,15 @@ export const SignedInStack = () => (
     <NavigationContainer>
         <Stack.Navigator initialRouteName="AccountSetUpChooseInterest" screenOptions={screenOptions}>
             <Stack.Screen name="AccountSetUpChooseInterest" component={AccountSetUpChooseInterest} />
+            <Stack.Screen name="AccountSetUpProfile" component={AccountSetUpProfile} />
+        </Stack.Navigator>
+    </NavigationContainer>
+)
+
+export const HomeStack = () => (
+    <NavigationContainer>
+        <Stack.Navigator initialRouteName="" screenOptions={screenOptions}>
+            <Stack.Screen name="HomePageScreen" component={HomePageScreen} />
         </Stack.Navigator>
     </NavigationContainer>
 )

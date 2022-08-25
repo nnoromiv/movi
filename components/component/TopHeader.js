@@ -5,7 +5,7 @@ import { Icon, icons, letYouInStyles } from './Exports'
 
 const TopHeader = ({navigation, Header, logoURL}) => {
   return (
-    <View style={{ flex: 1, backgroundColor: 'white'}}>
+    <View style={{ backgroundColor: 'white'}}>
     <View style={{ flexDirection: 'row', }}>
     <Icon imgStyle={letYouInStyles.icons} imgUrl={icons[0].imageUrl} press={() => navigation.goBack()}/>
     <Text style={{ color: '#212121', fontWeight: 'bold', marginTop: 5, marginBottom: -20,
@@ -21,6 +21,7 @@ export const logoStyle = StyleSheet.create ({
          width: 300,
          height: 200,
          alignSelf: 'center',
+         borderRadius: 50
     }
 })
 

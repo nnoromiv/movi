@@ -1,20 +1,30 @@
 import { View, Text } from 'react-native'
-import React from 'react'
+import React, { useState } from 'react'
 import SelectableChips from 'react-native-chip/SelectableChips'
 
+const INITIALCHIPS = [
+  "Action", "Drama","Comedy","Horror", "Adventure", "Thriller",
+  "Romance", "Science", "Music", "Documentary", "Crime",
+  "Fantasy", "Mystery", "Fiction", "Animation", "War", "History",
+  "Television", "Superheroes", "Anime", "Sports", "K-Drama"
+]
+
 const ChoiceChips = () => {
+  const [chipArray, setChipArray] = useState([])
   return (
     <View style={{ position: 'absolute',
     top: 150, marginHorizontal: 10,}}>
-    <SelectableChips initialChips={[
-        "Action", "Drama","Comedy","Horror", "Adventure", "Thriller",
-        "Romance", "Science", "Music", "Documentary", "Crime",
-        "Fantasy", "Mystery", "Fiction", "Animation", "War", "History",
-        "Television", "Superheroes", "Anime", "Sports", "K-Drama"
-        ]} 
-    onChangeChips={(chips) => console.log(chips)}
+    {
+      chipArray.length <= 5 ? 
+    <SelectableChips initialChips={INITIALCHIPS} 
+    onChangeChips={(chips) => setChipArray(chips)}
+    alertRequired={false}/> :
+    <SelectableChips initialChips={INITIALCHIPS.filter(n => chipArray.includes(n))}
+    onChangeChips={(chips) => setChipArray(chips)}
     alertRequired={false}/>
+    }
     </View>
+    
   )
 }
 
