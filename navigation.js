@@ -8,13 +8,14 @@ import LogInScreen from "./screens/LogInScreen";
 import AccountSetUpChooseInterest from "./screens/Account/AccountSetUpChooseInterest";
 import AccountSetUpProfile from "./screens/Account/AccountSetUpProfile";
 import HomePageScreen from "./screens/Home/HomePageScreen";
+import TopPopularScreen from "./screens/Home/TopPopularScreen";
+import TopReleaseScreen from "./screens/Home/TopReleaseScreen";
 
 const Stack = createStackNavigator()
 
 const screenOptions = {
     headerShown: false,
 }
-
 export const SignedOutStack = () => (
     <NavigationContainer>
         <Stack.Navigator initialRouteName="GetStartedScreen" screenOptions={screenOptions}>
@@ -37,8 +38,10 @@ export const SignedInStack = () => (
 
 export const HomeStack = () => (
     <NavigationContainer>
-        <Stack.Navigator initialRouteName="" screenOptions={screenOptions}>
+        <Stack.Navigator initialRouteName="HomePageScreen" screenOptions={screenOptions}>
             <Stack.Screen name="HomePageScreen" component={HomePageScreen} />
+            <Stack.Screen name="TopPopularScreen" component={TopPopularScreen} />
+            <Stack.Screen name="TopReleaseScreen" component={TopReleaseScreen} />
         </Stack.Navigator>
     </NavigationContainer>
 )

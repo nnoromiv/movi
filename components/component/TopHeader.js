@@ -3,15 +3,16 @@ import React from 'react'
 import { Icon, icons, letYouInStyles } from './Exports'
 
 
-const TopHeader = ({navigation, Header, logoURL}) => {
+const TopHeader = ({navigation, Header, logoURL, display}) => {
   return (
     <View style={{ backgroundColor: 'white'}}>
     <View style={{ flexDirection: 'row', }}>
     <Icon imgStyle={letYouInStyles.icons} imgUrl={icons[0].imageUrl} press={() => navigation.goBack()}/>
     <Text style={{ color: '#212121', fontWeight: 'bold', marginTop: 5, marginBottom: -20,
     fontSize: 24, fontFamily: "Urbanist-Bold" }}>{Header}</Text>
+    <Icon imgStyle={[letYouInStyles.search]} imgUrl={icons[5].activeUrl} />
     </View>
-     <Image source={logoURL} style={[logoStyle.logoIcon]}/>
+    <Image source={logoURL} style={[logoStyle.logoIcon,]} />
     </View>
   )
 }
@@ -21,7 +22,7 @@ export const logoStyle = StyleSheet.create ({
          width: 300,
          height: 200,
          alignSelf: 'center',
-         borderRadius: 50
+         borderRadius: 50,
     }
 })
 

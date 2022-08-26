@@ -38,7 +38,8 @@ export const icons = [
     {
         id: 5,
         name: 'Search icon',
-        imageUrl: 'https://img.icons8.com/ios-glyphs/60/ffffff/search--v1.png'
+        imageUrl: 'https://img.icons8.com/ios-glyphs/60/ffffff/search--v1.png',
+        activeUrl: 'https://img.icons8.com/ios-glyphs/60/000000/search--v1.png'
     },
     {
         id: 6,
@@ -72,8 +73,16 @@ export const letYouInStyles = StyleSheet.create ({
         width: 20,
         height: 20,
         marginHorizontal: 20,
-        marginTop: 10,
+        marginTop: 12,
         marginBottom: -20
+    },
+    search: {
+        width: 20,
+        height: 20,
+        marginHorizontal: 60,
+        marginTop: 12,
+        marginBottom: -20,
+        zIndex: 2
     },
     svgIcon : {
         width: 308,

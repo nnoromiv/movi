@@ -72,9 +72,9 @@ const HomePageScreen = ({navigation}) => {
         </View>
       </View>
       </View>
-      <TopPopularMoviesHeader />
+      <TopPopularMoviesHeader navigation={navigation}/>
       <TopPopularMovies navigation={navigation}/>
-      <TopNewReleasesHeader />
+      <TopNewReleasesHeader navigation={navigation}/>
       <TopNewReleases />
       </ScrollView>
       <BottomTab icons={BOTTOMTABSICON}/>
