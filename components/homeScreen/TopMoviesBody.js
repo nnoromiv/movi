@@ -1,4 +1,4 @@
-import { ScrollView, StyleSheet, Image } from 'react-native'
+import { ScrollView, StyleSheet, Image, View } from 'react-native'
 import React, { useEffect, useState }  from 'react'
 import { API_KEY, BASE_IMG_URL, BASE_URL, options } from '../../screens/Home/HomePageScreen'
 
@@ -10,8 +10,8 @@ export const TopPopularMovies = ({navigation}) => {
         await fetch(BASE_URL + '/discover/movie?sort_by=popularity.desc&' + API_KEY, options)
         .then(response => response.json())
         .then(res => setPopularMovies(res.results))
-        .catch( err => err.message === 'Network request failed' && 
-        console.log('Connect to the internet'))
+        .catch( err => console.log(err.message)
+        )
     }
     useEffect(() => {
         getPopularMovies()
@@ -19,6 +19,8 @@ export const TopPopularMovies = ({navigation}) => {
   return (
     <ScrollView horizontal={true} showsHorizontalScrollIndicator={false} style={{ marginLeft: 20}}>
     {
+        popularMovies === [] ?
+        <View style={styles.movieContainer}></View> :
         popularMovies.map((movie, key) => (
             <Image key={key} source={{ uri: BASE_IMG_URL + movie.poster_path}} style={styles.movieContainer}/>
         ))

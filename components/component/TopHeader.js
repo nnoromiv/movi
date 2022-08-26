@@ -3,7 +3,7 @@ import React from 'react'
 import { Icon, icons, letYouInStyles } from './Exports'
 
 
-const TopHeader = ({navigation, Header, logoURL, display}) => {
+const TopHeader = ({navigation, Header, logoURL,}) => {
   return (
     <View style={{ backgroundColor: 'white'}}>
     <View style={{ flexDirection: 'row', }}>
@@ -12,7 +12,7 @@ const TopHeader = ({navigation, Header, logoURL, display}) => {
     fontSize: 24, fontFamily: "Urbanist-Bold" }}>{Header}</Text>
     <Icon imgStyle={[letYouInStyles.search]} imgUrl={icons[5].activeUrl} />
     </View>
-    <Image source={logoURL} style={[logoStyle.logoIcon,]} />
+    <Icon imgUrl={logoURL} imgStyle={[logoStyle.logoIcon,]} press={() => navigation.push('ExploreScreen')}/>
     </View>
   )
 }

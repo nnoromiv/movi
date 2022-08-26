@@ -10,6 +10,7 @@ import AccountSetUpProfile from "./screens/Account/AccountSetUpProfile";
 import HomePageScreen from "./screens/Home/HomePageScreen";
 import TopPopularScreen from "./screens/Home/TopPopularScreen";
 import TopReleaseScreen from "./screens/Home/TopReleaseScreen";
+import ExploreScreen from "./screens/Explore/ExploreScreen";
 
 const Stack = createStackNavigator()
 
@@ -42,6 +43,7 @@ export const HomeStack = () => (
             <Stack.Screen name="HomePageScreen" component={HomePageScreen} />
             <Stack.Screen name="TopPopularScreen" component={TopPopularScreen} />
             <Stack.Screen name="TopReleaseScreen" component={TopReleaseScreen} />
+            <Stack.Screen name="ExploreScreen" component={ExploreScreen} />
         </Stack.Navigator>
     </NavigationContainer>
 )

@@ -57,6 +57,11 @@ export const icons = [
         imageUrl: 'https://img.icons8.com/sf-black-filled/64/d3d3d3/list.png',
         inactiveUrl: 'https://img.icons8.com/sf-black-filled/64/ffffff/list.png'
     },
+    {
+        id:9,
+        name: 'Filter',
+        imageUrl: 'https://img.icons8.com/external-flatart-icons-solid-flatarticons/64/007aff/external-sliders-ux-and-ui-flatart-icons-solid-flatarticons.png',
+    },
 
 ]
 
