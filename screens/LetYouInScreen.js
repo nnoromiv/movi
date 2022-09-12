@@ -17,8 +17,8 @@ const LetYouInScreen = ({navigation}) => {
         containerStyle={letYouInStyles.containerStyle} textName={icons[3].name} textStyle={letYouInStyles.textStyle}/>
         <Divider orientation='center' color='#000000' borderColor='#d3d3d3'>or</Divider>
         <Icon textName={'Sign in with password'} textStyle={letYouInStyles.passwordSignIn} press={() => navigation.push('LogInScreen')}/>
-        <View style={{ flexDirection: 'row', justifyContent: 'center', marginTop: 20}}>
-        <Icon textName={"Don't have an account?"}/>
+        <View style={{ flexDirection: 'row', justifyContent: 'center', marginTop: 20, textAlign: 'center',}}>
+        <Icon textName={"Don't have an account?"} />
         <Icon textName={' Sign Up'} textStyle={letYouInStyles.signUp} press={() => navigation.push('CreateAccountScreen')}/>
         </View>
     </SafeAreaView>

@@ -12,8 +12,7 @@ const INITIALCHIPS = [
 const ChoiceChips = () => {
   const [chipArray, setChipArray] = useState([])
   return (
-    <View style={{ position: 'absolute',
-    top: 150, marginHorizontal: 10,}}>
+    <View style={{ marginHorizontal: 10, marginTop: -90, marginBottom: 40}}>
     {
       chipArray.length <= 5 ? 
     <SelectableChips initialChips={INITIALCHIPS} 

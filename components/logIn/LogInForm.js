@@ -62,7 +62,7 @@ const LogInForm = ({navigation}) => {
                 />
                 <PrimaryButton buttonStyle={styles.button} buttonText='Log in' disabled={!isValid} buttonFunc={handleSubmit}/>
                 <Divider orientation='center' color='#000000' borderColor='#d3d3d3'>or continue with</Divider>
-                <View style={{ flexDirection: 'row'}}>
+                <View style={{ flexDirection: 'row', alignSelf: 'center'}}>
                 <Icon imgUrl={icons[1].imageUrl} 
                 imgStyle={styles.socialSignUp} containerStyle={[styles.containerStyle, {marginLeft: 50}]} />
                  <Icon imgUrl={icons[2].imageUrl} 

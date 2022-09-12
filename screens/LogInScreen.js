@@ -9,7 +9,7 @@ const LogInScreen = ({navigation}) => {
   return (
     <SafeAreaView style={{ flex: 1, backgroundColor: 'white',}}>
     <ScrollView>
-    <TopHeader navigation={navigation} logoURL={require(MOVI_LOGO)}/>
+    <TopHeader navigation={navigation} logo={require(MOVI_LOGO)}/>
     <LogInForm navigation={navigation}/>
     </ScrollView>
     </SafeAreaView>

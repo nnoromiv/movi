@@ -41,14 +41,12 @@ const HomePageScreen = ({navigation}) => {
     <SafeAreaView style={{ flex: 1, backgroundColor:'white'}}>
       <ScrollView showsVerticalScrollIndicator={false}>
       <View>
-      <Image  source={{ uri: imageUrl}} 
+      <Image source={{ uri: imageUrl}} 
       style={{ position: 'absolute', width: '100%', height: '100%', resizeMode: 'cover'}}/>
       <View style={{ width: '100%', }}>
         <View style={{ flexDirection: 'row', justifyContent: 'space-between'}}>
         <Image source={require(MOVI_LOGO)} style={{ width: 100, height: 90, }}/>
-        <View style={{ flexDirection: 'row', marginTop: 27, marginHorizontal: 20}}>
-        <Icon imgUrl={icons[5].imageUrl} imgStyle={{ width: 30, height: 30,}} press={() => navigation.push('ExploreScreen')}/>
-        <Text>    </Text>
+        <View style={{ flexDirection: 'row', marginTop: 27, }}>
         <Icon imgStyle={{ width: 30, height: 30}} imgUrl={icons[6].imageUrl} />
         </View>
         </View>

@@ -15,8 +15,8 @@ const AccountSetUpChooseInterest = ({navigation}) => {
         </Text>
         <ChoiceChips />
         <View style={{ flexDirection: 'row', 
-        justifyContent: 'space-around', marginHorizontal: 25,
-        position: 'absolute', bottom: 0, marginBottom: 30}}>
+        justifyContent: 'space-around', marginHorizontal: 25, 
+        marginBottom: 30}}>
         <PrimaryButton buttonStyle={styles.buttonSkip} buttonText='Skip'/>
         <PrimaryButton buttonStyle={styles.buttonContinue} 
         buttonText='Continue'
@@ -37,7 +37,7 @@ const styles = StyleSheet.create ({
         textAlign: 'left',
         lineHeight: 25,
         fontWeight: '600',
-        fontFamily: 'Urbanist-Medium'
+        fontFamily: 'Urbanist-Medium',
     },
     buttonSkip: {
         color: '#007aff',

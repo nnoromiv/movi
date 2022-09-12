@@ -39,7 +39,7 @@ const AccountSetUpProfileForm = ({navigation}) => {
       }
     }
     return (
-      <View style={{ marginTop: 50}}>
+      <View style={{ marginTop: 50, alignSelf: 'center'}}>
       <Formik 
       initialValues={{ fullName: '', userName: '', email: '', phoneNumber: '', gender: null}}
       onSubmit={(values) => console.log(values.email, values.fullName, values.gender, values.phoneNumber, values.userName)}

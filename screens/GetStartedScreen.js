@@ -37,7 +37,8 @@ const styles = StyleSheet.create ({
     textAlign: 'center',
     bottom: 150,
     paddingLeft: 10,
-    paddingRight: 10
+    paddingRight: 10,
+    alignSelf: 'center'
   },
   button: {
     color: 'white',

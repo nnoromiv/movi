@@ -9,7 +9,7 @@ const CreateAccountScreen = ({navigation}) => {
   return (
     <SafeAreaView style={{ flex: 1, backgroundColor: 'white'}}>
     <ScrollView>
-    <TopHeader navigation={navigation} logoURL={require(MOVI_LOGO)}/>
+    <TopHeader navigation={navigation} logo={require(MOVI_LOGO)}/>
      <CreateAccountForm navigation={navigation}/>
     </ScrollView>
     </SafeAreaView>

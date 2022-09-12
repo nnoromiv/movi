@@ -1,5 +1,6 @@
 import React from 'react'
 import { Image, StyleSheet, Text, TouchableOpacity } from 'react-native'
+import { logoStyle } from './TopHeader'
 
 export const PrimaryButton = ({ buttonStyle, buttonFunc, buttonText, disabled, buttonImgUrl, buttonImgStyle}) => (
     <TouchableOpacity disabled={disabled} onPress={buttonFunc}>
@@ -65,10 +66,11 @@ export const icons = [
 
 ]
 
-export const Icon = ({ imgStyle, imgUrl, containerStyle, textName, textStyle, press }) => (
+export const Icon = ({ imgStyle, imgUrl, containerStyle, textName, textStyle, press, searchIcon }) => (
     <TouchableOpacity style={containerStyle} onPress={press}>
         <Image style={imgStyle} source={{ uri: imgUrl}} />
         <Text style={textStyle}>{textName}</Text>
+        <Image style={[letYouInStyles.search]} source={searchIcon} />
     </TouchableOpacity>
 )
 
@@ -143,6 +145,7 @@ export const letYouInStyles = StyleSheet.create ({
     },
     signUp: {
         color: '#007aff',
-        fontWeight: '600'
+        fontWeight: '600',
+
     }
 })
