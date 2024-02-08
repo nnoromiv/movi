@@ -1,27 +1,4 @@
 {
-    "cSpell.language": "en,lorem,en-US,en-GB",
-    "cSpell.enableFiletypes": [
-        "jsx",
-        "jsx-attr",
-        "jsx-tags",
-        "juliamarkdown",
-        "kotlin",
-        "kotlinscript",
-        "objective-c",
-        "objective-cpp",
-        "perl"
-    ],
-    "cSpell.words": [
-        "BOTTOMTABSICON",
-        "buckconfig",
-        "Chidinma",
-        "fmsh",
-        "formik",
-        "Gwfo",
-        "imageurl",
-        "INITIALCHIPS",
-        "Kxvbkb",
-        "Pressable",
-        "rapidapi"
-    ]
+    "java.compile.nullAnalysis.mode": "disabled",
+    "java.configuration.updateBuildConfiguration": "interactive"
 }
