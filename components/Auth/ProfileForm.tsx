@@ -8,7 +8,7 @@ import { Button, FormInput, Text } from '..'
 import { Dropdown } from 'react-native-element-dropdown'
 
 
-const ProfileForm = () => {
+const ProfileForm = ({navigation} : any) => {
 
   const [selectedGender, setSelectedGender] = useState<string>('Select your gender')
 
@@ -21,7 +21,9 @@ const ProfileForm = () => {
   })
 
   const handleSubmit = ({ values }: HandleSubmitProfile) => (
-    console.log(values.fullName)
+    navigation.navigate('Home', {
+      params: {values}
+    })
   )
 
   return (

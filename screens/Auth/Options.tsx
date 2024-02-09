@@ -18,12 +18,12 @@ const Options = ({ navigation, route }: any) => {
 
       <Divider orientation="center" color="#000000" borderColor="#d3d3d3"> or </Divider>
       <Button title={ email } 
-        onPress={() => navigation.push('Interest')} 
+        onPress={() => navigation.navigate('Interest')} 
         style={'h-[60px] py-3 mt-3'} />
 
       <View style={tw`mt-3 flex flex-row justify-center`}>
         <Text>Don&apos;t have an account ? </Text>
-        <TouchableOpacity onPress={() => navigation.push('Register')}>
+        <TouchableOpacity onPress={() => navigation.navigate('Register')}>
           <Text style={tw`text-[#007aff] font-extrabold`}>Sign Up</Text>
         </TouchableOpacity>
       </View>

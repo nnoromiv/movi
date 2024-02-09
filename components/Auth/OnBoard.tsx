@@ -20,7 +20,7 @@ const OnBoard = ({navigation} : any) => {
 
   const handleSubmit = ({ values }: HandleSubmitValues) => {
     console.log(values.email, values.password)
-    navigation.push('Options', { email: values.email })
+    navigation.navigate('Options', { email: values.email })
   }
 
   return (
@@ -87,7 +87,7 @@ const OnBoard = ({navigation} : any) => {
 
             <View style={tw`mt-3 flex flex-row justify-center`}>
               <Text>Already have an account ? </Text>
-              <TouchableOpacity onPress={() => navigation.push('Options')}>
+              <TouchableOpacity onPress={() => navigation.navigate('Options')}>
                 <Text style={tw`text-[#007aff] font-extrabold`}>Log In</Text>
               </TouchableOpacity>
             </View>

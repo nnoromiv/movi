@@ -1,12 +1,17 @@
 import React from 'react'
-import { Image } from 'react-native'
 import { TouchableOpacity } from 'react-native'
 import { IconProps } from '../types'
+import FastImage from 'react-native-fast-image'
 
 export const Icon = ({style, onPress, imageStyle, imageUrl} : IconProps) => {
     return (
         <TouchableOpacity style={style} onPress={onPress}>
-            <Image style={imageStyle} source={imageUrl} />
+            <FastImage 
+            style={imageStyle} 
+            source={{
+                uri: imageUrl,
+                priority: FastImage.priority.high
+            }} />
         </TouchableOpacity>
     )
 }

@@ -7,7 +7,7 @@ This is a new [**TypeScript React Native**](https://reactnative.dev) project, bo
 ## Step 1: Clone Repository
 
 ```bash
-   git clone https://github.com/nnoromiv/movi.git
+   git clone https://github.com/nnoromiv/Movi.git
 ```
 
 >**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
@@ -15,7 +15,7 @@ This is a new [**TypeScript React Native**](https://reactnative.dev) project, bo
 >**Dependencies** Install all dependencies
 
 ```bash
-   cd movi
+   cd Movi
 ```
 
 ```bash

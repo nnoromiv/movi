@@ -6,13 +6,16 @@ import { Image } from 'react-native'
 import { HeaderProps } from '../types'
 import { LOGO } from '../constants'
 
-const Header = ({ header, navigation, logo }: HeaderProps) => {
+const Header = ({ goBack=true, header, navigation, logo }: HeaderProps) => {
     return (
         <View style={tw`flex flex-row justify-between items-center pt-3`}>
 
-            <TouchableOpacity onPress={() => navigation.goBack()}>
-                <Text style={tw`text-4xl font-extrabold `} >&larr;</Text>
-            </TouchableOpacity>
+            {
+                goBack &&
+                <TouchableOpacity onPress={() => navigation.goBack()}>
+                    <Text style={tw`text-4xl font-extrabold `} >&larr;</Text>
+                </TouchableOpacity>
+            }
 
             {
                 !logo ?

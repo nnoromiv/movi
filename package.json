@@ -19,6 +19,7 @@
     "react-native-chip": "^3.1.0",
     "react-native-divider": "^1.0.3",
     "react-native-element-dropdown": "^2.10.1",
+    "react-native-fast-image": "^8.6.3",
     "react-native-safe-area-context": "^4.8.2",
     "react-native-screens": "^3.29.0",
     "react-native-vector-icons": "^10.0.3",
@@ -37,6 +38,7 @@
     "@types/react-test-renderer": "^18.0.0",
     "babel-jest": "^29.6.3",
     "jest": "^29.6.3",
+    "react-native-dotenv": "^3.4.9",
     "react-test-renderer": "18.2.0",
     "typescript": "5.0.4"
   },

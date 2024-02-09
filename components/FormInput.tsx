@@ -22,7 +22,7 @@ const FormInput : React.FC<FormInputProps> = (
             {
                 source === undefined && sourceError === undefined
                 ? <></> :
-                <Image source={{ uri: logic ? sourceError : source }}
+                <Image src={logic ? sourceError : source }
                     style={tw`w-[25px] h-[25px] absolute z-2 mx-3`}
                 />
             }

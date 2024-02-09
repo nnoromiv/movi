@@ -6,13 +6,15 @@
  */
 
 import React from 'react';
-import { AuthStack } from './Stacks'
+import { Stacks } from './Stacks'
 
 export const backgroundStyle = "bg-neutral-300 dark:bg-slate-900"
 
 function App() {
   return (
-    <AuthStack />
+    <>
+      <Stacks />
+    </>
   );
 }
 
