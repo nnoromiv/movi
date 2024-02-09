@@ -20,20 +20,20 @@ const Stacks: React.FC<StackProps> = () => {
 
   return (
     <NavigationContainer theme={theme} >
-      <Stack.Navigator initialRouteName='Home' screenOptions={screenOptions}>
+      <Stack.Navigator initialRouteName='Welcome' screenOptions={screenOptions}>
         <Stack.Group>
-        <Stack.Screen name="Welcome" component={Welcome} />
-        <Stack.Screen name="Options" component={Options} />
-        <Stack.Screen name="Register" component={Register} />
-        <Stack.Screen name="Interest" component={Interest} />
-        <Stack.Screen name="SetUpProfile" component={SetUpProfile} />
+          <Stack.Screen name="Welcome" component={Welcome} />
+          <Stack.Screen name="Options" component={Options} />
+          <Stack.Screen name="Register" component={Register} />
+          <Stack.Screen name="Interest" component={Interest} />
+          <Stack.Screen name="SetUpProfile" component={SetUpProfile} />
         </Stack.Group>
 
         <Stack.Group>
-        <Stack.Screen name="Home" component={Home} />
-        <Stack.Screen name="PopularMovies" component={PopularMovies} />
-        <Stack.Screen name="ReleasedMovie" component={ReleasedMovie} />
-        <Stack.Screen name="Explore" component={Explore} />
+          <Stack.Screen name="Home" component={Home} />
+          <Stack.Screen name="PopularMovies" component={PopularMovies} />
+          <Stack.Screen name="ReleasedMovie" component={ReleasedMovie} />
+          <Stack.Screen name="Explore" component={Explore} />
         </Stack.Group>
 
       </Stack.Navigator>
@@ -42,6 +42,6 @@ const Stacks: React.FC<StackProps> = () => {
 };
 
 
-export { 
+export {
   Stacks
 };

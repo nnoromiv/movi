@@ -100,11 +100,27 @@ const getGenre = (state: Movies | undefined): string => {
     return genre
 }
 
+const handleSearchMovies = async (param : string) => {
+  const result = await fetch(
+    BASE_URL + '/search/movie?' + API_KEY + '&query='+ param,
+    getOption
+    ).then(
+        response => response.json()
+    ).then(
+        res => res.results
+    ).catch(
+        err => console.error(err)
+    )
+
+    return result
+};
+
 export {
     fetchMovie,
     fetchPopularMovies,
     fetchReleasedMovies,
     handleTitleShorten,
     getImage,
-    getGenre
+    getGenre,
+    handleSearchMovies
 }

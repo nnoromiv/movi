@@ -1,4 +1,5 @@
-import { fetchMovie, fetchPopularMovies, fetchReleasedMovies, getGenre, getImage, handleTitleShorten } from "./page"
+import { fetchMovie, fetchPopularMovies, fetchReleasedMovies, getGenre, getImage, handleSearchMovies, handleTitleShorten } from "./page"
+
 
 export {
     fetchMovie,
@@ -6,5 +7,6 @@ export {
     fetchReleasedMovies,
     handleTitleShorten,
     getImage,
-    getGenre
+    getGenre,
+    handleSearchMovies
 }

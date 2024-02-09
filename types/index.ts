@@ -21,6 +21,7 @@ export interface CustomButtonProps {
 export interface IconProps {
     style?: any
     onPress?: () => void
+    onPressOut?:() => void
     imageStyle: any
     imageUrl: any
 }

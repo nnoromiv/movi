@@ -13,7 +13,7 @@ import Hero from "./Home/Hero";
 import { Title } from "./Home/Title";
 import MoviesCard from "./Home/MoviesCard";
 import { Tab } from "./Home/Tab";
-
+import SearchMovie from "./Home/SearchMovie";
 
 export {
     Button,
@@ -30,5 +30,6 @@ export {
     Hero,
     Title,
     MoviesCard,
-    Tab
+    Tab,
+    SearchMovie
 }
