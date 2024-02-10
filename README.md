@@ -2,7 +2,7 @@
 
 This is a new [**TypeScript React Native**](https://reactnative.dev) project, bootstrapped using [`nnoromiv rnTailwind`](https://github.com/nnoromiv/rnTailwind).
 
-This is a movie application the utilizes the `themoviedb` API.
+This is a movie application that utilizes the [`themoviedb`](https://www.themoviedb.org/) API.
 
 ## Preview
 
