@@ -6,34 +6,44 @@ This is a movie application the utilizes the `themoviedb` API.
 
 ## Preview
 
-- Welcome
+### Welcome
+
 ![Welcome](assets/preview/welcome.png)
 
-- Options
+### Options
+
 ![Options](assets/preview/options.png)
 
-- Join
+### Join
+
 ![Join](assets/preview/join.png)
 
-- Interest
+### Interest
+
 ![Interest](assets/preview/interest.png)
 
-- Profile
+### Profile
+
 ![Profile](assets/preview/setupprofile.png)
 
-- Home
+### Home
+
 ![Home](assets/preview/home.png)
 
-- No Search
+### No Search
+
 ![No Search](assets/preview/nosearch.png)
 
-- Search
+### Search
+
 ![Search](assets/preview/search.png)
 
-- Popular
+### Popular
+
 ![Popular](assets/preview/popular.png)
 
-- New Releases
+### New Releases
+
 ![New Releases](assets/preview/new.png)
 
 ## Getting Started
