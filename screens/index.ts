@@ -1,3 +1,4 @@
+/* The code is exporting a list of components and modules from different files. */
 import { SetUpProfile } from "../components";
 import Interest from "./Auth/Interest";
 import Options from "./Auth/Options";

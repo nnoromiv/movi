@@ -1,3 +1,4 @@
+/* This code is exporting various constants and variables used in a TypeScript React application. */
 import { Chip } from "../types"
 
 export const BG_IMAGE = require('../assets/layout.png')

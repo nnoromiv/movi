@@ -37,7 +37,7 @@ const SearchMovie = (param: any) => {
                     contentContainerStyle={tw``}
                     data={searchFound?.slice(0,number)}
                     numColumns={2}
-                    keyExtractor={(item) => item.original_title}
+                    keyExtractor={(item, index) => (item.original_title + index)}
                     renderItem={(item) => (
                         <MoviesCard key={item.index} image={getImage(item.item)} title={handleTitleShorten({ state: (item.item), slicer: 12 })} />
                     )}

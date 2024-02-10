@@ -5,6 +5,7 @@ import tw from '../../tailwind'
 
 const Register = ({ navigation }: any) => {
   return (
+    /* The code is creating a React component called "Register". */
     <SafeAreaView style={tw`bg-white h-full px-3`}>
       <ScrollView>
         <Header navigation={navigation} logo header='Register'/>

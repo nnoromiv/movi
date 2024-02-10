@@ -3,6 +3,7 @@ import { Image, TextInput, View } from 'react-native'
 import tw from '../tailwind'
 import { FormInputProps } from '../types'
 
+/* The code is defining a functional component called `FormInput` using TypeScript and React. */
 const FormInput : React.FC<FormInputProps> = (
     {
         logic, 
@@ -18,6 +19,8 @@ const FormInput : React.FC<FormInputProps> = (
         maxLength
     }) => {
     return (
+        /* The code you provided is a React component called `FormInput`. It renders a `View` component
+        that contains an `Image` component and a `TextInput` component. */
         <View style={tw`flex justify-center mt-3`}>
             {
                 source === undefined && sourceError === undefined

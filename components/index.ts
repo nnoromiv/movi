@@ -1,3 +1,4 @@
+/* The code is exporting various components and modules from different files. */
 import Background from "./Auth/Background";
 import InterestChips from "./Auth/InterestChips";
 import OnBoard from "./Auth/OnBoard";

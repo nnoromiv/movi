@@ -6,8 +6,13 @@ import { Image } from 'react-native'
 import { HeaderProps } from '../types'
 import { LOGO } from '../constants'
 
+/* The code is defining a functional component called `Header` that takes in four props: `goBack`,
+`header`, `navigation`, and `logo`. The `goBack` prop has a default value of `true`. The component
+returns JSX code that renders a header with a back button, a header text, and an optional logo
+image. */
 const Header = ({ goBack=true, header, navigation, logo }: HeaderProps) => {
     return (
+       /* The code is defining a React component called `Header`. */
         <View style={tw`flex flex-row justify-between items-center pt-3`}>
 
             {

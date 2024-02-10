@@ -4,15 +4,22 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { Options, Welcome, Register, Interest, Home, PopularMovies, ReleasedMovie, Explore } from './screens';
 import { SetUpProfile } from './components';
 
-type StackProps = {};
 
+/* The code `const Stack = createNativeStackNavigator();` is creating a stack navigator using the
+`createNativeStackNavigator` function from the `@react-navigation/native-stack` library. This stack
+navigator will be used to define the navigation stack for the app. */
 const Stack = createNativeStackNavigator();
 
 const screenOptions = {
   headerShown: false,
 };
 
-const Stacks: React.FC<StackProps> = () => {
+/**
+ * This is a TypeScript React component that sets up a navigation stack for a mobile app.
+ * @returns The code is returning a React component that renders a navigation container with multiple
+ * stack groups. Each stack group contains multiple stack screens.
+ */
+const Stacks: React.FC = () => {
   const theme = {
     ...DefaultTheme,
     // Your custom theme configurations go here

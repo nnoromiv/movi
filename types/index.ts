@@ -1,3 +1,4 @@
+/* The code is defining a set of TypeScript interfaces and types. */
 import { ChangeEvent, ReactNode } from "react";
 import { KeyboardTypeOptions, textContentType } from "react-native";
 
@@ -155,4 +156,13 @@ export interface MoviesCardProps {
 }
 export interface HeroProps {
     image: string
+}
+
+export type Params = (
+    string
+)
+
+export interface handleTitleShortenProps {
+    state: Movies | PopularMovie | undefined
+    slicer: number
 }

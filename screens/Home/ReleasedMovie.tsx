@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { Header, MoviesCard, Tab } from '../../components'
-import { FlatList, SafeAreaView, View } from 'react-native'
+import { FlatList, SafeAreaView } from 'react-native'
 import tw from '../../tailwind'
 import { PopularMovie } from '../../types'
 import { fetchReleasedMovies, getImage, handleTitleShorten } from '../API'
@@ -9,6 +9,9 @@ const ReleasedMovie = ({ navigation }: any) => {
     const [popularMovies, setPopularMovies] = useState<PopularMovie[]>()
 
 
+    /* The `useEffect` hook is used to perform side effects in a functional component. In this case, it
+    is used to fetch data from the `fetchReleasedMovies` function and update the state variable
+    `popularMovies` with the fetched data. */
     useEffect(() => {
         const fetchData = async () => {
             try {
@@ -24,6 +27,9 @@ const ReleasedMovie = ({ navigation }: any) => {
         fetchData()
     }, [true])
     return (
+        /* The code is rendering a component called `SafeAreaView` from the React Native library. This
+        component ensures that the content is displayed within the safe area of the device screen,
+        taking into account notches, status bars, and other system UI elements. */
         <SafeAreaView style={tw`bg-white h-full px-3`}>
             <Header logo={false} goBack={false} header='New Released Movies' navigation={navigation} />
             <FlatList

@@ -7,6 +7,8 @@ import FastImage from 'react-native-fast-image'
 
 export const SetUpProfile = ({navigation} : any) => {
     return (
+        /* The code you provided is a React component called `SetUpProfile`. It is rendering a view
+        that sets up a user's profile. */
         <SafeAreaView style={tw`flex bg-white px-3 h-full`}>
         <ScrollView>
             <Header logo={false} navigation={navigation} header='Set Up Profile' />

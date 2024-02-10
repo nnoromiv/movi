@@ -1,6 +1,40 @@
-# TypeScript React Native & Tailwind CSS
+# Movi App with TypeScript React Native & Tailwind CSS
 
-This is a new [**TypeScript React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli) integrated with Tailwind CSS functionalities from [**Tailwind React Native Classnames**](https://github.com/jaredh159/tailwind-react-native-classnames).
+This is a new [**TypeScript React Native**](https://reactnative.dev) project, bootstrapped using [`nnoromiv rnTailwind`](https://github.com/nnoromiv/rnTailwind).
+
+This is a movie application the utilizes the `themoviedb` API.
+
+## Preview
+
+- Welcome
+![Welcome](assets/preview/welcome.png)
+
+- Options
+![Options](assets/preview/options.png)
+
+- Join
+![Join](assets/preview/join.png)
+
+- Interest
+![Interest](assets/preview/interest.png)
+
+- Profile
+![Profile](assets/preview/setupprofile.png)
+
+- Home
+![Home](assets/preview/home.png)
+
+- No Search
+![No Search](assets/preview/nosearch.png)
+
+- Search
+![Search](assets/preview/search.png)
+
+- Popular
+![Popular](assets/preview/popular.png)
+
+- New Releases
+![New Releases](assets/preview/new.png)
 
 ## Getting Started
 
@@ -11,7 +45,6 @@ This is a new [**TypeScript React Native**](https://reactnative.dev) project, bo
 ```
 
 >**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
-
 >**Dependencies** Install all dependencies
 
 ```bash
@@ -64,18 +97,22 @@ npm run ios
 yarn ios
 ```
 
-If everything is set up _correctly_, you should see your new app running in your _Android Emulator_ or _iOS Simulator_ shortly provided you have set up your emulator/simulator correctly.
-
-This is one way to run your app — you can also run it directly from within Android Studio and Xcode respectively.
-
-## Step 3: Modifying your App
+## Step 3: Set Up your API & `.env`
 
 Now that you have successfully run the app, let's modify it.
 
-1. Open `Home.tsx` in your text editor of choice and edit some lines.
-2. For **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Developer Menu** (<kbd>Ctrl</kbd> + <kbd>M</kbd> (on Window and Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (on macOS)) to see your changes!
+1. Navigate to [`The Movie DB website`](https://www.themoviedb.org/).
+2. Create an Account and get an API.
+3. Create a `.env` file in the folder directory
+4. Populate your `.env` as follows.
 
-   For **iOS**: Hit <kbd>Cmd ⌘</kbd> + <kbd>R</kbd> in your iOS Simulator to reload the app and see your changes!
+```env
+
+   BASE_URL = 'https://api.themoviedb.org/3'
+   API_KEY = 'api_key=YOUR_API_KEY'
+   BASE_IMG_URL = 'https://image.tmdb.org/t/p/original'
+
+```
 
 ## Step 4: Using the Tailwind
 
@@ -91,15 +128,9 @@ Now that you have successfully run the app, let's modify it.
 
 ```
 
-## Features
-
-[**Jared Henderson Profile**](https://github.com/jaredh159)
-
-[**Visit the Official Tailwind React Native Classname by Jared Henderson**](https://github.com/jaredh159/tailwind-react-native-classnames)
-
 ## Congratulations! :tada:
 
-You've successfully run and modified your React Native App. :partying_face:
+You've successfully run and modified your Movi App. :partying_face:
 
 ### Now what?
 

@@ -5,6 +5,7 @@ import { Background, Button, Text } from '../../components'
 
 const Welcome = ({navigation} : any) => {
     return (
+        /* The code block you provided is rendering a welcome screen for a movie streaming app. */
         <SafeAreaView style={tw`bg-black`}>
             <Background />
             <View style={tw`absolute z-5 bottom-[50px] px-3 gap-4 flex justify-center items-center`}>

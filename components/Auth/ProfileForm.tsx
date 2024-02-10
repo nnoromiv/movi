@@ -81,6 +81,10 @@ const ProfileForm = ({navigation} : any) => {
               maxLength={11}
             />
 
+           {/* /* The `<Dropdown>` component is a custom dropdown component from the
+           `react-native-element-dropdown` library. It allows the user to select an option from a
+        dropdown menu. */}
+
             <Dropdown
               data={[
                 {

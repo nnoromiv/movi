@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { Hero, MoviesCard, Tab, Title } from '../../components'
 import { SafeAreaView, ScrollView, View } from 'react-native'
 import tw from '../../tailwind'
-import { fetchMovie, fetchPopularMovies, fetchReleasedMovies, getGenre, getImage, handleTitleShorten } from '../API'
+import { fetchMovie, fetchPopularMovies, fetchReleasedMovies, getImage, handleTitleShorten } from '../API'
 import { Movies, PopularMovie } from '../../types'
 
 export const Home = ({ navigation, route }: any) => {
@@ -10,6 +10,9 @@ export const Home = ({ navigation, route }: any) => {
   const [popularMovies, setPopularMovies] = useState<PopularMovie[]>()
   const [releasedMovie, setReleasedMovie] = useState<PopularMovie[]>()
 
+ /* The code is using destructuring assignment to extract the values of `fullName`, `userName`,
+ `email`, `phoneNumber`, and `gender` from the `route.params` object. If `route.params` is undefined
+ or null, the default values for these variables will be an empty object. */
   const { 
     fullName,
     userName,
@@ -19,6 +22,8 @@ export const Home = ({ navigation, route }: any) => {
   } = route?.params || {};
 
 
+ /* The `useEffect` hook is used to perform side effects in a functional component. In this case, it is
+ used to fetch data from the server and update the component's state. */
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -44,6 +49,7 @@ export const Home = ({ navigation, route }: any) => {
   }, [email,true])
 
   return (
+    /* The code snippet is rendering a component called `Home` in a React Native application. */
     <SafeAreaView style={tw`bg-white h-full`}>
       <ScrollView showsVerticalScrollIndicator={false}>
         <Hero image={getImage(data)} />

@@ -1,14 +1,17 @@
 import React from 'react'
-import { Image, TouchableOpacity, View } from 'react-native'
+import { TouchableOpacity, View } from 'react-native'
 import tw from '../../tailwind'
-import { NO_MOVIE_PICTURE } from '../../constants'
 import { Text } from '..'
 import FastImage from 'react-native-fast-image'
 import { MoviesCardProps } from '../../types'
 
 
+/* The code is defining a functional component called `MoviesCard` using the arrow function syntax. It
+is also specifying the type of the component using the `React.FC<MoviesCardProps>` type annotation. */
 const MoviesCard : React.FC<MoviesCardProps> = ({ image, title }) => {
     return (
+        /* The code is defining a React functional component called `MoviesCard`. It takes in two
+        props, `image` and `title`. */
         <TouchableOpacity>
             <View style={tw`mx-2`}>
                 <FastImage 
