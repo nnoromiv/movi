@@ -69,6 +69,58 @@ This is a movie application that utilizes the [`themoviedb`](https://www.themovi
    yarn add 
 ```
 
+## Step 0: Create your `gradle.properties` file
+
+Naturally auto generated react native structure contain this file but I `.gitignore` mine cause it hold Uploading Secrets.
+
+- Navigate to the `android` folder.
+- Create new file called `gradle.properties`
+- Populate with the code below.
+
+```gradle.properties
+   # Project-wide Gradle settings.
+
+   # IDE (e.g. Android Studio) users:
+   # Gradle settings configured through the IDE *will override*
+   # any settings specified in this file.
+
+   # For more details on how to configure your build environment visit
+   # http://www.gradle.org/docs/current/userguide/build_environment.html
+
+   # Specifies the JVM arguments used for the daemon process.
+   # The setting is particularly useful for tweaking memory settings.
+   # Default value: -Xmx512m -XX:MaxMetaspaceSize=256m
+   org.gradle.jvmargs=-Xmx2048m -XX:MaxMetaspaceSize=512m
+
+   # When configured, Gradle will run in incubating parallel mode.
+   # This option should only be used with decoupled projects. More details, visit
+   # http://www.gradle.org/docs/current/userguide/multi_project_builds.html#sec:decoupled_projects
+   # org.gradle.parallel=true
+
+   # AndroidX package structure to make it clearer which packages are bundled with the
+   # Android operating system, and which are packaged with your app's APK
+   # https://developer.android.com/topic/libraries/support-library/androidx-rn
+   android.useAndroidX=true
+   # Automatically convert third-party libraries to use AndroidX
+   android.enableJetifier=true
+
+   # Use this property to specify which architecture you want to build.
+   # You can also override it from the CLI using
+   # ./gradlew <task> -PreactNativeArchitectures=x86_64
+   reactNativeArchitectures=armeabi-v7a,arm64-v8a,x86,x86_64
+
+   # Use this property to enable support to the new architecture.
+   # This will allow you to use TurboModules and the Fabric render in
+   # your application. You should enable this flag either if you want
+   # to write custom TurboModules/Fabric components OR use libraries that
+   # are providing them.
+   newArchEnabled=false
+
+   # Use this property to enable or disable the Hermes JS engine.
+   # If set to false, you will be using JSC instead.
+   hermesEnabled=true
+```
+
 ## Step 1: Start the Metro Server
 
 First, you will need to start **Metro**, the JavaScript _bundler_ that ships _with_ React Native.
